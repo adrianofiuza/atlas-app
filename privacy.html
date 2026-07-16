@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atlas — Privacy Policy</title>
-<meta name="description" content="Atlas Privacy Policy. What we collect, why, and your choices. No ads, no tracking, no selling your data.">
+<meta name="description" content="Atlas Privacy Policy. What data Atlas handles, why, and your choices. No ads, no third-party tracking, no selling your data.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -32,60 +32,74 @@
   <div class="wrap">
     <a class="back" href="index.html">&larr; Atlas</a>
     <h1>Privacy Policy</h1>
-    <p class="upd">Last updated: June 23, 2026</p>
+    <p class="upd">Effective date: July 16, 2026</p>
 
-    <p class="lead">Atlas respects your privacy. This policy explains what we collect, why, and the choices you have. Plain language, no surprises.</p>
+    <p class="lead">Atlas is made by Adriano Fiuza, an independent solo developer. This policy explains, in plain language, what data Atlas handles and why. If anything is unclear, email <a href="mailto:adrianofiuzajr@gmail.com">adrianofiuzajr@gmail.com</a>.</p>
 
-    <h2>Information you provide</h2>
+    <h2>The short version</h2>
     <ul>
-      <li><strong>Account.</strong> When you create an account we collect your email address and a password (handled securely by our authentication provider). You may optionally add a display name and a profile photo.</li>
-      <li><strong>Your content.</strong> The tasks, notes, and journal entries you create, including any mood you log, photos you attach, voice recordings you make, and your focus session history.</li>
+      <li>Atlas collects only what it needs to work: your <strong>account email</strong>, an optional <strong>profile name</strong>, and the <strong>content you create</strong> (tasks, notes, journal entries and voice memos, focus statistics, and attachments).</li>
+      <li>There are <strong>no ads, no third-party analytics or trackers</strong>, and your data is <strong>never sold or shared</strong> for marketing.</li>
+      <li>If you choose to <strong>share a note</strong> with someone, its content becomes visible to the people you invite. Sharing is opt-in, per note, and you control who has access.</li>
+      <li>Atlas keeps <strong>basic usage statistics</strong> (like days active) in its own database to understand how the app is doing. No third party receives them.</li>
+      <li>Your content syncs through <strong>Supabase</strong> (hosted infrastructure) so it appears on all your devices.</li>
+      <li>Your content is <strong>not end-to-end encrypted</strong>. &ldquo;Locked&rdquo; notes and journal entries restrict access <strong>on your device only</strong> &mdash; on the server they are stored like any other content.</li>
+      <li>You can <strong>export</strong> your data and <strong>delete your account</strong> (and everything with it) from inside the app at any time.</li>
     </ul>
 
-    <h2>How we use it</h2>
+    <h2>What data Atlas collects</h2>
+    <p><strong>Account email.</strong> Used to create and sign in to your Atlas account and to identify which synced data belongs to you.</p>
+    <p><strong>Profile name.</strong> If you set a display name in Settings, it is stored with your account so it can appear on your devices.</p>
+    <p><strong>Your content.</strong> Tasks, notes, journal entries (including any voice memos you record), tags, focus session statistics, and any attachments (such as photos) you add. This is the substance of the app, so Atlas stores it to show it back to you and sync it across your devices.</p>
+    <p><strong>Shared notes (optional).</strong> Atlas lets you share a note with other Atlas users by invite. If you share a note, its content &mdash; and any edits made by people you&rsquo;ve invited &mdash; becomes visible to everyone with access, not just you. You choose who to invite (by email), what they can do (view or edit), and can remove their access or stop sharing the note at any time. A note you have not chosen to share stays private to you.</p>
+    <p><strong>Usage statistics (first-party).</strong> Atlas records basic activity &mdash; days you opened the app, time in the foreground, app version, language, and whether your account has an active subscription &mdash; in Atlas&rsquo;s own database, tied to your account. This powers aggregate numbers (like how many people use Atlas daily) and is never shared with third parties.</p>
+    <p>Beyond that, Atlas does not collect your location, contacts, browsing history, device fingerprints, or advertising identifiers.</p>
+
+    <h2>What Atlas does not do</h2>
     <ul>
-      <li>To provide the app: to save your content and keep it in sync across your devices.</li>
-      <li>To sign you in and keep your account secure.</li>
-    </ul>
-    <p>We do not use your content for advertising, and we do not build a marketing profile of you.</p>
-
-    <h2>Voice notes and transcription</h2>
-    <p>If you record a voice note in your journal, the audio is saved with that entry. Transcription uses Apple's Speech framework, on device where available, and the resulting text is stored in your entry.</p>
-
-    <h2>Photos</h2>
-    <p>If you attach a photo, it is stored with your note or journal entry. Atlas only accesses the specific photos you choose.</p>
-
-    <h2>Where your data is stored</h2>
-    <p>Your account and content are stored with our backend provider (Supabase) and transmitted over an encrypted connection (HTTPS / TLS).</p>
-
-    <h2>What we do not do</h2>
-    <ul>
-      <li>No ads.</li>
-      <li>No third-party advertising trackers, and no analytics used for advertising.</li>
-      <li>We never sell or rent your personal data.</li>
+      <li><strong>No ads.</strong> Atlas shows no advertising of any kind.</li>
+      <li><strong>No third-party analytics.</strong> Atlas contains no third-party analytics SDKs or trackers; the basic usage statistics above live only in Atlas&rsquo;s own database.</li>
+      <li><strong>No tracking.</strong> Atlas does not track you across other apps or websites, and uses no advertising identifiers.</li>
+      <li><strong>No sale of data.</strong> Your data is never sold, rented, or shared with third parties for their own purposes.</li>
     </ul>
 
-    <h2>Face ID</h2>
-    <p>You can lock the Journal behind Face ID. Biometric authentication is handled entirely by iOS. Atlas never sees or stores your biometric data.</p>
+    <h2>Where your data lives (sync)</h2>
+    <p>When you sign in, your content is stored on servers operated through <strong>Supabase</strong>, a hosted infrastructure provider, so it can sync between your devices. Data is encrypted in transit (HTTPS/TLS) and protected by access controls so that only your account can read your data through the app.</p>
+    <p><strong>Important honesty note:</strong> your content is <strong>not end-to-end encrypted</strong>. This means the server stores your content in a form that is technically readable by the infrastructure, as is the case for most sync services. The developer does not browse user content, but you should not store anything in Atlas that you would not entrust to a standard cloud service.</p>
+    <p><strong>Locked notes and journals.</strong> The &ldquo;lock&rdquo; feature (Face ID / Touch ID / passcode) protects content from other people who handle your <strong>device</strong>. It does not add server-side encryption &mdash; locked items are stored on the server the same way as everything else.</p>
 
-    <h2>Your choices</h2>
+    <h2>Device permissions, explained</h2>
+    <p>Atlas asks for permissions only when a feature needs them. Each one is optional:</p>
     <ul>
-      <li>You can edit or delete your content at any time in the app.</li>
-      <li>You can delete your account and its associated data from Settings in the app.</li>
-      <li>For help with your data, email us at the address below.</li>
+      <li><strong>Notifications</strong> &mdash; to deliver task reminders and focus-session alerts you set. Reminders are scheduled locally on each of your devices.</li>
+      <li><strong>Calendar</strong> &mdash; only if you choose to connect calendar features; used to display or create events you ask for. Calendar data is read on-device and is not uploaded to Atlas servers.</li>
+      <li><strong>Face ID / Touch ID</strong> &mdash; to lock and unlock protected notes and journal entries. Biometric data is handled entirely by Apple&rsquo;s operating system; Atlas never sees, stores, or transmits your biometric information.</li>
+      <li><strong>Photos</strong> &mdash; only when you attach an image to a task, note, or journal entry. Atlas accesses only the photos you pick; attached images become part of your synced content.</li>
+      <li><strong>Microphone</strong> &mdash; only when you record a voice memo in a journal entry. The recording is saved with that entry and syncs as part of your content.</li>
     </ul>
+
+    <h2>Data retention and deletion</h2>
+    <ul>
+      <li><strong>Export:</strong> Settings includes a data export so you can take a copy of your content at any time.</li>
+      <li><strong>Delete Account:</strong> the in-app Delete Account option permanently removes your account, your email, and all synced content from the servers. This is irreversible. Residual copies in routine infrastructure backups expire on the provider&rsquo;s standard backup cycle.</li>
+      <li>Uninstalling the app removes local data from that device but does not delete your synced account &mdash; use Delete Account for that.</li>
+    </ul>
+
+    <h2>Your rights (GDPR, CCPA, and similar laws)</h2>
+    <p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data, and to lodge a complaint with a supervisory authority. Atlas is built so you can exercise the main ones yourself: export from Settings, deletion via Delete Account. For anything else &mdash; or if you just want help &mdash; email <a href="mailto:adrianofiuzajr@gmail.com">adrianofiuzajr@gmail.com</a> and you&rsquo;ll get a reply from the actual developer.</p>
+    <p>For GDPR purposes, the legal basis for processing your account and content is <strong>performance of a contract</strong> (providing the app and sync you signed up for); first-party usage statistics are processed under <strong>legitimate interest</strong> (operating and improving the app). For CCPA purposes: Atlas does not sell or share personal information.</p>
 
     <h2>Children</h2>
-    <p>Atlas is not directed to children under 13, and we do not knowingly collect personal data from children under 13.</p>
+    <p>Atlas is not directed at children under 13 (or the minimum age in your region), and no data is knowingly collected from them.</p>
 
     <h2>Changes to this policy</h2>
-    <p>We may update this policy from time to time. We will post the new version here with an updated date.</p>
+    <p>If this policy changes in a meaningful way, the updated version will be published with a new effective date, and significant changes will be highlighted in the app or release notes.</p>
 
     <h2>Contact</h2>
-    <p>Questions about your privacy? Email <a href="mailto:adrianofiuzajr@gmail.com">adrianofiuzajr@gmail.com</a>.</p>
+    <p>Adriano Fiuza &mdash; <a href="mailto:adrianofiuzajr@gmail.com">adrianofiuzajr@gmail.com</a></p>
 
     <div class="foot">
-      <p>© 2026 Adriano Fiuza. All rights reserved.</p>
+      <p>&copy; 2026 Adriano Fiuza. All rights reserved.</p>
     </div>
   </div>
 </body>
