@@ -98,7 +98,7 @@
   .appstore-badge img{ height:54px; width:auto; display:block; }
 
   /* ---------- Hero ---------- */
-  .hero{ position:relative; text-align:center; padding:78px 0 40px; }
+  .hero{ position:relative; text-align:center; padding:78px 0 40px; overflow-x:clip; }   /* contain the glow so it can't push page width */
   .hero .glow{ position:absolute; inset:-10% -20% auto -20%; height:520px; background:radial-gradient(60% 60% at 50% 30%, color-mix(in srgb, var(--gold) 16%, transparent), transparent 70%); filter:blur(20px); z-index:0; pointer-events:none; }
   .hero > *{ position:relative; z-index:1; }
   .eyebrow{ display:inline-flex; align-items:center; gap:8px; font-size:13.5px; font-weight:700; color:var(--muted); background:var(--card); border:1px solid var(--border); border-radius:100px; padding:6px 14px; margin-bottom:22px; }
@@ -197,6 +197,7 @@
   /* ---------- Responsive ---------- */
   @media (max-width:820px){
     .nav-links{ display:none; }
+    .nav .btn{ margin-left:auto; }   /* no nav links on mobile -> push Download to the right */
     .feature{ grid-template-columns:1fr; gap:32px; margin-top:64px; }
     .feature:nth-child(even) .f-media{ order:0; }
     .f-media .phone{ width:240px; }
